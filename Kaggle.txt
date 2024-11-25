@@ -1,0 +1,20 @@
+# Create token https://www.kaggle.com/settings
+
+
+# Check that the hidden folder does not already exist
+cd ~/.kaggle/
+  # OUTPUT > cd: no such file or directory: /Users/vanessa/.kaggle/
+
+# Create kaggle folder
+mkdir ~/.kaggle/
+
+# Verify that it was created
+ls -la 
+  # OUTPUT > drwxr-xr-x    2 vanessa  staff        64 Nov 24 08:52 .kaggle
+
+
+# Move json to correct directory
+realpath .kaggle
+  # OUTPUT > /Users/vanessa/.kaggle
+  # (Go wherever json file is)
+mv kaggle.json /Users/vanessa/.kaggle 
